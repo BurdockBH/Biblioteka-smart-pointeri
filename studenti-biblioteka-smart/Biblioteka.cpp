@@ -145,7 +145,7 @@ void Biblioteka::RazduziKnjigu(int br_evidencije) {
 	}
 }
 
-void Biblioteka::PrikaziZaduzenja(int br_indeksa) {
+void Biblioteka::PrikaziZaduzenja(int br_indeksa) const {
 	if (studenti.find(br_indeksa) == studenti.end()) {
 		throw std::logic_error("Student nije nadjen");
 	}
