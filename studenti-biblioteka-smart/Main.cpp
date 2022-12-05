@@ -2,13 +2,13 @@
 #include <map>
 #include <memory>
 #include "Biblioteka.h"
-
+using namespace std;
 
 int main() {
 
 	Biblioteka bib;
 	int opcija;
-	std::cout << "Odaberite opciju: \n 1 - Registriraj novog studenta (br indeksa, ime, prezime, godina studija, adresa, telefon)"
+	cout << "Odaberite opciju: \n 1 - Registriraj novog studenta (br indeksa, ime, prezime, godina studija, adresa, telefon)"
 		<< "\n 2 - Registriraj novu knjigu (br evidencije, ime knjige, ime pisca, zanr, godina izdavanja)"
 		<< "\n 3 - Nadji studenta (broj indeksa)"
 		<< "\n 4 - Nadji knjigu (broj evidencije)"
@@ -18,8 +18,8 @@ int main() {
 		<< "\n 8 - Razduzi knjigu (broj evidencije)"
 		<< "\n 9 - Prikazi zaduzenja (broj indeksa) \n 0 - Izlaz" << std::endl;
 	while (true) {
-		std::cout << "Opcija: ";
-		std::cin >> opcija;
+		cout << "Opcija: ";
+		cin >> opcija;
 		switch (opcija)
 		{
 		case 1:
